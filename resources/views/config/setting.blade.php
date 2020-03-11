@@ -52,74 +52,74 @@
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="header">
-                <div class="row clearfix">
-                    <div class="col-xs-12 col-sm-6">
-                        <h2>Default Background</h2><small>( <a href="{{ url('403') }}">403</a> / <a href="{{ url('404') }}">404</a> )</small>
-                    </div>
-                </div>
-            </div>
-            <div class="body">
-                <div class="row">
-                    <div class="col-xs-12 m-b-0">
-                        <div class="image-content">
-                            <div class="image-overlay overlay-bg"><div class="image-overlay-content"><img src="{{ asset('images/loader.gif')}}" alt="Loading..."/></div></div>
-                            <img src="{{ asset('uploads/images/'.$setting->bg) }}" class="img-responsive thumbnail" id="setting-bg" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#bg-update">
-                        </div>
-                        <form id="uploadBg" method="post" enctype="multipart/form-data">
-                            <input type="file" name="bg" id="input-bg" style="display: none;" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--        <div class="card">--}}
+{{--            <div class="header">--}}
+{{--                <div class="row clearfix">--}}
+{{--                    <div class="col-xs-12 col-sm-6">--}}
+{{--                        <h2>Default Background</h2><small>( <a href="{{ url('403') }}">403</a> / <a href="{{ url('404') }}">404</a> )</small>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="body">--}}
+{{--                <div class="row">--}}
+{{--                    <div class="col-xs-12 m-b-0">--}}
+{{--                        <div class="image-content">--}}
+{{--                            <div class="image-overlay overlay-bg"><div class="image-overlay-content"><img src="{{ asset('images/loader.gif')}}" alt="Loading..."/></div></div>--}}
+{{--                            <img src="{{ asset('uploads/images/'.$setting->bg) }}" class="img-responsive thumbnail" id="setting-bg" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#bg-update">--}}
+{{--                        </div>--}}
+{{--                        <form id="uploadBg" method="post" enctype="multipart/form-data">--}}
+{{--                            <input type="file" name="bg" id="input-bg" style="display: none;" />--}}
+{{--                        </form>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <div class="card">
-            <div class="header">
-                <div class="row clearfix">
-                    <div class="col-xs-12 col-sm-6">
-                        <h2>Logo</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="body">
-                <div class="row">
-                    <div class="col-xs-12 m-b-0">
-                        <div class="image-content">
-                            <div class="image-overlay overlay-logo"><div class="image-overlay-content"><img src="{{ asset('images/loader.gif')}}" alt="Loading..."/></div></div>
-                            <img src="{{ asset('uploads/images/'.$setting->logo) }}" class="img-responsive thumbnail bg-striped" id="setting-logo" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#logo-update">
-                        </div>
-                        <form id="uploadLogo" method="post" enctype="multipart/form-data">
-                            <input type="file" name="logo" id="input-logo" style="display: none;" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-	    <div class="card">
-	        <div class="header">
-                <div class="row clearfix">
-                    <div class="col-xs-12 col-sm-6">
-                        <h2>Poster</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="body">
-                <div class="row">
-                    <div class="col-xs-12 m-b-0">
-                        <div class="image-content">
-                            <div class="image-overlay overlay-poster"><div class="image-overlay-content"><img src="{{ asset('images/loader.gif')}}" alt="Loading..."/></div></div>
-                            <img src="{{ asset('uploads/images/posters/'.$setting->poster) }}" class="img-responsive thumbnail" id="setting-poster" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#poster-update">
-                        </div>
-                        <form id="uploadPoster" method="post" enctype="multipart/form-data">
-                            <input type="file" name="poster" id="input-poster" style="display: none;" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--        <div class="card">--}}
+{{--            <div class="header">--}}
+{{--                <div class="row clearfix">--}}
+{{--                    <div class="col-xs-12 col-sm-6">--}}
+{{--                        <h2>Logo</h2>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="body">--}}
+{{--                <div class="row">--}}
+{{--                    <div class="col-xs-12 m-b-0">--}}
+{{--                        <div class="image-content">--}}
+{{--                            <div class="image-overlay overlay-logo"><div class="image-overlay-content"><img src="{{ asset('images/loader.gif')}}" alt="Loading..."/></div></div>--}}
+{{--                            <img src="{{ asset('uploads/images/'.$setting->logo) }}" class="img-responsive thumbnail bg-striped" id="setting-logo" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#logo-update">--}}
+{{--                        </div>--}}
+{{--                        <form id="uploadLogo" method="post" enctype="multipart/form-data">--}}
+{{--                            <input type="file" name="logo" id="input-logo" style="display: none;" />--}}
+{{--                        </form>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--	    <div class="card">--}}
+{{--	        <div class="header">--}}
+{{--                <div class="row clearfix">--}}
+{{--                    <div class="col-xs-12 col-sm-6">--}}
+{{--                        <h2>Poster</h2>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="body">--}}
+{{--                <div class="row">--}}
+{{--                    <div class="col-xs-12 m-b-0">--}}
+{{--                        <div class="image-content">--}}
+{{--                            <div class="image-overlay overlay-poster"><div class="image-overlay-content"><img src="{{ asset('images/loader.gif')}}" alt="Loading..."/></div></div>--}}
+{{--                            <img src="{{ asset('uploads/images/posters/'.$setting->poster) }}" class="img-responsive thumbnail" id="setting-poster" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#poster-update">--}}
+{{--                        </div>--}}
+{{--                        <form id="uploadPoster" method="post" enctype="multipart/form-data">--}}
+{{--                            <input type="file" name="poster" id="input-poster" style="display: none;" />--}}
+{{--                        </form>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </div>
 </div>
 
