@@ -18,7 +18,7 @@ use App\Village;
 
 Route::get('/', function () {
 //    return view('frontend');
-    return view('login');
+    return view('auth/login');
 });
 
 Route::get('403/', function () {
