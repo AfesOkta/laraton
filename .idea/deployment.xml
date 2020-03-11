@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="scraper_equasis">
+    <serverData>
+      <paths name="scraper_equasis">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="scraper-equasis" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
