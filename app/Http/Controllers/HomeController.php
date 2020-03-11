@@ -339,4 +339,11 @@ class HomeController extends Controller
             echo 'Data riwayat pekerjaan gagal dihapus!';
         }
     }
+
+    // function for scraper website Equasis
+    public function scraper()
+    {
+        $profile = Auth::User();
+        return view('scraper.scraper', compact('scraper'));
+    }
 }

@@ -17,7 +17,8 @@ use App\District;
 use App\Village;
 
 Route::get('/', function () {
-    return view('frontend');
+//    return view('frontend');
+    return view('login');
 });
 
 Route::get('403/', function () {
@@ -121,3 +122,6 @@ Route::post('/profile/add_work', 'HomeController@add_work');
 Route::post('/profile/update_work', 'HomeController@update_work');
 Route::post('/profile/get_work', 'HomeController@get_work');
 Route::post('/profile/remove_work', 'HomeController@remove_work');
+
+// MANAGE SCRAPER
+Route::post('/scraper', 'HomeController@scraper')->name('scraper');
