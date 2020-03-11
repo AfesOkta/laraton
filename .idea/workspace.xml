@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a30a9a55-a3b7-4635-90fa-46876398919d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/scrapper/scrapper.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/scrapper/scraper.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +176,28 @@
       <option name="project" value="LOCAL" />
       <updated>1583900168162</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- add view and add method scraper in HomeController.php">
+      <created>1583908568626</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583908568626</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- add view and add method scraper in HomeController.php">
+      <created>1583909091144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583909091144</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- add view and add method scraper in HomeController.php">
+      <created>1583911888926</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583911888926</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +209,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first - commit" />
     <MESSAGE value="- add procfile, for permission access in heroku server" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add procfile, for permission access in heroku server" />
+    <MESSAGE value="- add view and add method scraper in HomeController.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add view and add method scraper in HomeController.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="193" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583873031318">
@@ -203,13 +221,13 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="382" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1304.768@0.0.1304.768" timestamp="1583768883425" />
-    <state x="565" y="0" width="797" height="732" key="CommitChangelistDialog2" timestamp="1583908542895">
+    <state x="565" y="0" width="797" height="732" key="CommitChangelistDialog2" timestamp="1583911885853">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="565" y="0" width="797" height="732" key="CommitChangelistDialog2/0.0.1366.735@0.0.1366.735" timestamp="1583908542895" />
-    <state x="268" y="138" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1583900175133">
+    <state x="565" y="0" width="797" height="732" key="CommitChangelistDialog2/0.0.1366.735@0.0.1366.735" timestamp="1583911885853" />
+    <state x="268" y="138" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1583911890939">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="268" y="138" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1583900175133" />
+    <state x="268" y="138" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1583911890939" />
   </component>
 </project>
