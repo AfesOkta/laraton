@@ -124,4 +124,4 @@ Route::post('/profile/get_work', 'HomeController@get_work');
 Route::post('/profile/remove_work', 'HomeController@remove_work');
 
 // MANAGE SCRAPER
-Route::post('/scraper', 'HomeController@scraper')->name('scraper');
+Route::get('/scraper', 'HomeController@scraper')->name('scraper');

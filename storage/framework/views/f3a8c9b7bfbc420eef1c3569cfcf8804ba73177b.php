@@ -1,7 +1,6 @@
-@extends('layouts.adminbsb')
-@section('title', 'Setting')
+<?php $__env->startSection('title', 'Setting'); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 <div class="row clearfix">
     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 pull-right">
         <div class="card">
@@ -17,32 +16,33 @@
                     <div class="col-sm-12">
                         <div class="form-group form-float">
                             <div class="form-line success">
-                                <input type="text" id="setting-appname" name="appname" class="form-control" value="{{ $setting->appname }}" required="required">
+                                <input type="text" id="setting-appname" name="appname" class="form-control" value="<?php echo e($setting->appname); ?>" required="required">
                                 <label class="form-label" for="setting-appname">Nama Aplikasi <span class="col-red">*</span></label>
                             </div>
                         </div>
                         <div class="form-group form-float">
                             <div class="form-line success">
-                                <input type="text" id="setting-subname" name="subname" class="form-control" value="{{ $setting->subname }}" required="required">
+                                <input type="text" id="setting-subname" name="subname" class="form-control" value="<?php echo e($setting->subname); ?>" required="required">
                                 <label class="form-label" for="setting-subname">Sub Nama Aplikasi <span class="col-red">*</span></label>
                             </div>
                         </div>
                         <div class="form-group form-float">
                             <div class="form-line success">
-                                <input type="text" id="setting-copyright" name="copyright" class="form-control" value="{{ $setting->copyright }}" required="required">
+                                <input type="text" id="setting-copyright" name="copyright" class="form-control" value="<?php echo e($setting->copyright); ?>" required="required">
                                 <label class="form-label" for="setting-copyright">Copyright <span class="col-red">*</span></label>
                             </div>
                         </div>
                         <div class="form-group form-float">
                             <div class="form-line success">
-                                <input type="text" id="setting-version" name="version" class="form-control" value="{{ $setting->version }}" required="required">
+                                <input type="text" id="setting-version" name="version" class="form-control" value="<?php echo e($setting->version); ?>" required="required">
                                 <label class="form-label" for="setting-version">Versi <span class="col-red">*</span></label>
                             </div>
                         </div>
                         <label class="form-label" for="setting-skin">Default Skin <span class="col-red">*</span></label>
                         <div class="form-group form-float">
                             <div class="form-line success">
-                                {{ Form::select('skin', skins(), $setting->skin, ['class'=>'form-control show-tick', 'id'=>'setting-skin', 'required'=>"required"]) }}
+                                <?php echo e(Form::select('skin', skins(), $setting->skin, ['class'=>'form-control show-tick', 'id'=>'setting-skin', 'required'=>"required"])); ?>
+
                             </div>
                         </div>
                         <div id="buttons">
@@ -56,7 +56,7 @@
             <div class="header">
                 <div class="row clearfix">
                     <div class="col-xs-12 col-sm-6">
-                        <h2>Default Background</h2><small>( <a href="{{ url('403') }}">403</a> / <a href="{{ url('404') }}">404</a> )</small>
+                        <h2>Default Background</h2><small>( <a href="<?php echo e(url('403')); ?>">403</a> / <a href="<?php echo e(url('404')); ?>">404</a> )</small>
                     </div>
                 </div>
             </div>
@@ -64,8 +64,8 @@
                 <div class="row">
                     <div class="col-xs-12 m-b-0">
                         <div class="image-content">
-                            <div class="image-overlay overlay-bg"><div class="image-overlay-content"><img src="{{ asset('images/loader.gif')}}" alt="Loading..."/></div></div>
-                            <img src="{{ asset('uploads/images/'.$setting->bg) }}" class="img-responsive thumbnail" id="setting-bg" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#bg-update">
+                            <div class="image-overlay overlay-bg"><div class="image-overlay-content"><img src="<?php echo e(asset('images/loader.gif')); ?>" alt="Loading..."/></div></div>
+                            <img src="<?php echo e(asset('uploads/images/'.$setting->bg)); ?>" class="img-responsive thumbnail" id="setting-bg" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#bg-update">
                         </div>
                         <form id="uploadBg" method="post" enctype="multipart/form-data">
                             <input type="file" name="bg" id="input-bg" style="display: none;" />
@@ -88,8 +88,8 @@
                 <div class="row">
                     <div class="col-xs-12 m-b-0">
                         <div class="image-content">
-                            <div class="image-overlay overlay-logo"><div class="image-overlay-content"><img src="{{ asset('images/loader.gif')}}" alt="Loading..."/></div></div>
-                            <img src="{{ asset('uploads/images/'.$setting->logo) }}" class="img-responsive thumbnail bg-striped" id="setting-logo" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#logo-update">
+                            <div class="image-overlay overlay-logo"><div class="image-overlay-content"><img src="<?php echo e(asset('images/loader.gif')); ?>" alt="Loading..."/></div></div>
+                            <img src="<?php echo e(asset('uploads/images/'.$setting->logo)); ?>" class="img-responsive thumbnail bg-striped" id="setting-logo" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#logo-update">
                         </div>
                         <form id="uploadLogo" method="post" enctype="multipart/form-data">
                             <input type="file" name="logo" id="input-logo" style="display: none;" />
@@ -98,28 +98,28 @@
                 </div>
             </div>
         </div>
-{{--	    <div class="card">--}}
-{{--	        <div class="header">--}}
-{{--                <div class="row clearfix">--}}
-{{--                    <div class="col-xs-12 col-sm-6">--}}
-{{--                        <h2>Poster</h2>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="body">--}}
-{{--                <div class="row">--}}
-{{--                    <div class="col-xs-12 m-b-0">--}}
-{{--                        <div class="image-content">--}}
-{{--                            <div class="image-overlay overlay-poster"><div class="image-overlay-content"><img src="{{ asset('images/loader.gif')}}" alt="Loading..."/></div></div>--}}
-{{--                            <img src="{{ asset('uploads/images/posters/'.$setting->poster) }}" class="img-responsive thumbnail" id="setting-poster" style="width: 100%; cursor: pointer;" data-toggle="modal" data-target="#poster-update">--}}
-{{--                        </div>--}}
-{{--                        <form id="uploadPoster" method="post" enctype="multipart/form-data">--}}
-{{--                            <input type="file" name="poster" id="input-poster" style="display: none;" />--}}
-{{--                        </form>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 </div>
 
@@ -167,9 +167,9 @@
         </div>
     </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@push('style')
+<?php $__env->startPush('style'); ?>
 <style type="text/css">
     .image-content{position: relative;}
     .image-overlay{position: absolute;left: 0; top: 0; right: 0; bottom: 0;z-index: 2;background-color: rgba(255,255,255,0.8);display: none;}
@@ -195,12 +195,12 @@
     }
 </style>
 <!-- Bootstrap Select Css -->
-<link href="{{ asset('template/adminbsb/plugins/bootstrap-select/css/bootstrap-select.css') }}" rel="stylesheet" />
-@endpush
+<link href="<?php echo e(asset('template/adminbsb/plugins/bootstrap-select/css/bootstrap-select.css')); ?>" rel="stylesheet" />
+<?php $__env->stopPush(); ?>
 
-@push('script')
+<?php $__env->startPush('script'); ?>
 <!-- Select Plugin Js -->
-<script src="{{ asset('template/adminbsb/plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
+<script src="<?php echo e(asset('template/adminbsb/plugins/bootstrap-select/js/bootstrap-select.js')); ?>"></script>
 <script type="text/javascript">
     function isImage(ext) {
         switch (ext.toLowerCase()) {
@@ -225,14 +225,14 @@
             closeOnConfirm: false
         }, function () {
             $.ajax({
-                url: "{{url('setting/reset_logo')}}",
-                data: {_token: '{{ csrf_token() }}'},
+                url: "<?php echo e(url('setting/reset_logo')); ?>",
+                data: {_token: '<?php echo e(csrf_token()); ?>'},
                 type: 'POST',
                 success: function(data) {
                     swal("Berhasil!", data, "success");
-                    $('#logo').attr('src', "{{ asset('uploads/images/mtk_white.png') }}");
-                    $('#setting-logo').attr('src', "{{ asset('uploads/images/mtk_white.png') }}");
-                    $('#favicon').attr('href', "{{ asset('uploads/images/fav_mtk_white.png') }}?"+new Date().getTime());
+                    $('#logo').attr('src', "<?php echo e(asset('uploads/images/mtk_white.png')); ?>");
+                    $('#setting-logo').attr('src', "<?php echo e(asset('uploads/images/mtk_white.png')); ?>");
+                    $('#favicon').attr('href', "<?php echo e(asset('uploads/images/fav_mtk_white.png')); ?>?"+new Date().getTime());
                 },
                 error: function(data) {
                     swal("Gagal!", data, "error");
@@ -253,16 +253,16 @@
             closeOnConfirm: false
         }, function () {
             $.ajax({
-                url: "{{url('setting/reset_poster')}}",
-                data: {_token: '{{ csrf_token() }}'},
+                url: "<?php echo e(url('setting/reset_poster')); ?>",
+                data: {_token: '<?php echo e(csrf_token()); ?>'},
                 type: 'POST',
                 dataType: 'json',
                 success: function(data) {
                     swal("Berhasil!", data.message, "success");
-                    $('#poster_image').attr('src', "{{ asset('uploads/images/posters') }}/"+data.poster);
-                    $('#fit_poster_image').css('background', "url('{{ asset('uploads/images/posters') }}/fit_"+data.poster);
+                    $('#poster_image').attr('src', "<?php echo e(asset('uploads/images/posters')); ?>/"+data.poster);
+                    $('#fit_poster_image').css('background', "url('<?php echo e(asset('uploads/images/posters')); ?>/fit_"+data.poster);
                     $('#fit_poster_image').css('background-size', 'cover');
-                    $('#setting-poster').attr('src', "{{ asset('uploads/images/posters/poster.jpg') }}");
+                    $('#setting-poster').attr('src', "<?php echo e(asset('uploads/images/posters/poster.jpg')); ?>");
                 },
                 error: function(data) {
                     swal("Gagal!", data.message, "error");
@@ -283,13 +283,13 @@
             closeOnConfirm: false
         }, function () {
             $.ajax({
-                url: "{{url('setting/reset_bg')}}",
-                data: {_token: '{{ csrf_token() }}'},
+                url: "<?php echo e(url('setting/reset_bg')); ?>",
+                data: {_token: '<?php echo e(csrf_token()); ?>'},
                 type: 'POST',
                 success: function(data) {
                     swal("Berhasil!", data, "success");
-                    $('#bg').attr('src', "{{ asset('uploads/images/bg.jpg') }}");
-                    $('#setting-bg').attr('src', "{{ asset('uploads/images/bg.jpg') }}");
+                    $('#bg').attr('src', "<?php echo e(asset('uploads/images/bg.jpg')); ?>");
+                    $('#setting-bg').attr('src', "<?php echo e(asset('uploads/images/bg.jpg')); ?>");
                 },
                 error: function(data) {
                     swal("Gagal!", data, "error");
@@ -315,8 +315,8 @@
             } else {
                 $.ajax({
                     type: "POST",
-                    data: {_token: '{{ csrf_token() }}', appname:appname, subname:subname, copyright:copyright, version:version, skin:skin},
-                    url: "{{ url('/setting/update_setting') }}",
+                    data: {_token: '<?php echo e(csrf_token()); ?>', appname:appname, subname:subname, copyright:copyright, version:version, skin:skin},
+                    url: "<?php echo e(url('/setting/update_setting')); ?>",
                     success: function(data) {
                         showAlert(data, 'bg-blue');
                         setInterval(function() {
@@ -348,10 +348,10 @@
                 $('.overlay-logo').show();
                 var logo = $('#input-logo')[0].files[0];
                 var form = new FormData();
-                form.append('_token', '{{ csrf_token() }}');
+                form.append('_token', '<?php echo e(csrf_token()); ?>');
                 form.append('logo', logo);
                 $.ajax({
-                    url: "{{url('setting/update_logo')}}",
+                    url: "<?php echo e(url('setting/update_logo')); ?>",
                     data: form,
                     dataType: 'json',
                     cache: false,
@@ -359,9 +359,9 @@
                     processData: false,
                     type: 'POST',
                     success: function(data) {
-                        $('#logo').attr('src', "{{ asset('uploads/images') }}/"+data.logo+"?"+new Date().getTime());
-                        $('#setting-logo').attr('src', "{{ asset('uploads/images') }}/"+data.logo+"?"+new Date().getTime());
-                        $('#favicon').attr('href', "{{ asset('uploads/images/fav_') }}"+data.logo+"?"+new Date().getTime());
+                        $('#logo').attr('src', "<?php echo e(asset('uploads/images')); ?>/"+data.logo+"?"+new Date().getTime());
+                        $('#setting-logo').attr('src', "<?php echo e(asset('uploads/images')); ?>/"+data.logo+"?"+new Date().getTime());
+                        $('#favicon').attr('href', "<?php echo e(asset('uploads/images/fav_')); ?>"+data.logo+"?"+new Date().getTime());
                         showAlert(data.message, 'bg-blue');
                         $('.overlay-logo').hide();
                     },
@@ -382,10 +382,10 @@
                 $('.overlay-poster').show();
                 var poster = $('#input-poster')[0].files[0];
                 var form = new FormData();
-                form.append('_token', '{{ csrf_token() }}');
+                form.append('_token', '<?php echo e(csrf_token()); ?>');
                 form.append('poster', poster);
                 $.ajax({
-                    url: "{{url('setting/update_poster')}}",
+                    url: "<?php echo e(url('setting/update_poster')); ?>",
                     data: form,
                     dataType: 'json',
                     cache: false,
@@ -393,10 +393,10 @@
                     processData: false,
                     type: 'POST',
                     success: function(data) {
-                        $('#poster_image').attr('src', "{{ asset('uploads/images/posters') }}/"+data.poster);
-                        $('#fit_poster_image').css('background', "url('{{ asset('uploads/images/posters') }}/fit_"+data.poster);
+                        $('#poster_image').attr('src', "<?php echo e(asset('uploads/images/posters')); ?>/"+data.poster);
+                        $('#fit_poster_image').css('background', "url('<?php echo e(asset('uploads/images/posters')); ?>/fit_"+data.poster);
                         $('#fit_poster_image').css('background-size', 'cover');
-                        $('#setting-poster').attr('src', "{{ asset('uploads/images/posters') }}/"+data.poster+"?"+new Date().getTime());
+                        $('#setting-poster').attr('src', "<?php echo e(asset('uploads/images/posters')); ?>/"+data.poster+"?"+new Date().getTime());
                         showAlert(data.message, 'bg-blue');
                         $('.overlay-poster').hide();
                     },
@@ -417,10 +417,10 @@
                 $('.overlay-bg').show();
                 var bg = $('#input-bg')[0].files[0];
                 var form = new FormData();
-                form.append('_token', '{{ csrf_token() }}');
+                form.append('_token', '<?php echo e(csrf_token()); ?>');
                 form.append('bg', bg);
                 $.ajax({
-                    url: "{{url('setting/update_bg')}}",
+                    url: "<?php echo e(url('setting/update_bg')); ?>",
                     data: form,
                     dataType: 'json',
                     cache: false,
@@ -428,8 +428,8 @@
                     processData: false,
                     type: 'POST',
                     success: function(data) {
-                        $('#bg').attr('src', "{{ asset('uploads/images') }}/"+data.bg+"?"+new Date().getTime());
-                        $('#setting-bg').attr('src', "{{ asset('uploads/images') }}/"+data.bg+"?"+new Date().getTime());
+                        $('#bg').attr('src', "<?php echo e(asset('uploads/images')); ?>/"+data.bg+"?"+new Date().getTime());
+                        $('#setting-bg').attr('src', "<?php echo e(asset('uploads/images')); ?>/"+data.bg+"?"+new Date().getTime());
                         showAlert(data.message, 'bg-blue');
                         $('.overlay-bg').hide();
                     },
@@ -441,4 +441,6 @@
         });
     });
 </script>
-@endpush
+<?php $__env->stopPush(); ?>
+
+<?php echo $__env->make('layouts.adminbsb', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\laraton\resources\views/config/setting.blade.php ENDPATH**/ ?>

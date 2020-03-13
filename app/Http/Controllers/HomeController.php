@@ -343,7 +343,7 @@ class HomeController extends Controller
     // function for scraper website Equasis
     public function scraper()
     {
-        $profile = Auth::User();
+        $scraper = Auth::User();
         return view('scraper.scraper', compact('scraper'));
     }
 }
