@@ -41,16 +41,6 @@
                                                 class="col-red">*</span></label>
                                     </div>
                                 </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line success">
-                                        <input type="checkbox" value="SHIP" id="ship"
-                                               class="chk-col-green filled-in checkbox-group" name="ship"/>
-                                        <label for="ship">SHIP</label>
-                                        <input type="checkbox" value="COMPANY" id="company"
-                                               class="chk-col-green filled-in checkbox-group" name="company"/>
-                                        <label for="company">Company</label>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -84,12 +74,11 @@
             var password = $('#password').val();
             var subname = $('#subname').val();
             var mmsi = $('#mmsi').val();
-            var ship = $('#ship').val();
-            var company = $('#company').val();
+
 
             $.ajax({
                 type: "GET",
-                data: {email: email, password: password, subname:subname, mmsi:mmsi, ship:ship, company:company},
+                data: {email: email, password: password, subname:subname, mmsi:mmsi},
                 url: "{{ url('/scraper/scrape') }}",
                 dataType: "json",
                 success: function (data) {
