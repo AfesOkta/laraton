@@ -2,16 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a30a9a55-a3b7-4635-90fa-46876398919d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/scraper/scraper.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/lO8gotSvnxO50HZNp7fkkClK3cftMEnNbqnp6cyk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/686922cfb52077b49481433832b16c2bb373a5b5.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/7878eb432f989f61ce9b75a4389be9344c7b9e66.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/989d509d6ce6b4a7d6e85e65fccd4f994481b924.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/c7dfdff2960aa87d645c73ffb5c1141e002234d2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/d6ec27c54512c4baba92cabd96dc9924953c5462.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/d8063e7cc7b91afcd239e4e2683207709dc007ac.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/df272dcf1edf5befba87c74b62e1bc4b75059f12.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/f3a8c9b7bfbc420eef1c3569cfcf8804ba73177b.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Proxynpm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/class_key.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/classification_status.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/classification_survey.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/company_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/company_overview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/deficiencies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/doc_compliance.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fleet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/geo_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/history_class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/history_company.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/history_flag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/history_name.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imo_conventions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/list_psc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/management_detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/overviews.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/pi_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ships.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/smc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/synthesis_inspection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_200705_create_ships_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_221537_create_overviews_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_223134_create_classification_surveys_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_223519_create_classification_statuses_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_224202_create_management_details_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_224500_create_smcs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_224934_create_pi_infos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_230443_create_geo_infos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_230903_create_imo_conventions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231312_create_list_pscs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231426_create_deficiencies_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231452_create_history_names_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231512_create_history_flags_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231529_create_history_classes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231548_create_history_companies_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231608_create_company_overviews_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231619_create_doc_compliances_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231634_create_synthesis_inspections_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231650_create_fleets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231702_create_class_keys_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_231725_create_company_infos_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/bin/carbon" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/bin/carbon.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/bin/php-parse.bat" afterDir="false" />
@@ -445,16 +479,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/config/setting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/config/setting.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/scrapper/scraper.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/scraper/scraper.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/scraper/scraper.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/12/8d/128d481cc70c32badfb1fd31612486aada37bf3d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/46/78/4678e2443d054e51a232a7bc7932d3b721d8d3ce" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ea2GymJpT2GBHlSPWG2oGOGeFwPs1xVwQ5djftxQ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/lO8gotSvnxO50HZNp7fkkClK3cftMEnNbqnp6cyk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d8063e7cc7b91afcd239e4e2683207709dc007ac.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d8063e7cc7b91afcd239e4e2683207709dc007ac.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/php-parse" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/php-parse" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/phpunit" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpunit" afterDir="false" />
@@ -3887,6 +3918,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/vendor/fabpot/goutte" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Ytf13nJ4OixYahmvu5V9Skqp3N" />
@@ -3905,6 +3938,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laraton\app" />
+      <recent name="C:\xampp\htdocs\laraton\app\Http\Controllers" />
+      <recent name="C:\xampp\htdocs\laraton\app\Providers" />
+      <recent name="C:\xampp\htdocs\laraton\packages\proxynpm" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\PHP\laraton\laravel" />
     </key>
@@ -3942,7 +3981,9 @@
       <workItem from="1583841017815" duration="50000" />
       <workItem from="1583872795191" duration="3347000" />
       <workItem from="1583887665536" duration="698000" />
-      <workItem from="1584111262384" duration="5509000" />
+      <workItem from="1584111262384" duration="6135000" />
+      <workItem from="1584184903919" duration="16383000" />
+      <workItem from="1584240844093" duration="11001000" />
     </task>
     <task id="LOCAL-00001" summary="- add procfile, for permission access in heroku server">
       <created>1583900037178</created>
@@ -3993,7 +4034,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583946740595</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- add modul scraper, but the controller is still not finished">
+      <created>1584118765823</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584118765823</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -4007,7 +4055,8 @@
     <MESSAGE value="- add procfile, for permission access in heroku server" />
     <MESSAGE value="- add view and add method scraper in HomeController.php" />
     <MESSAGE value="- remarks for problem upload images" />
-    <option name="LAST_COMMIT_MESSAGE" value="- remarks for problem upload images" />
+    <MESSAGE value="- add modul scraper, but the controller is still not finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add modul scraper, but the controller is still not finished" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="193" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583873031318">
@@ -4018,19 +4067,38 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="382" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1304.768@0.0.1304.768" timestamp="1583768883425" />
-    <state x="539" y="0" width="797" height="732" key="CommitChangelistDialog2" timestamp="1583946739535">
+    <state x="323" y="0" width="797" height="732" key="CommitChangelistDialog2" timestamp="1584118638271">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="539" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1583946739535" />
+    <state x="323" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1584118638271" />
     <state x="565" y="0" width="797" height="732" key="CommitChangelistDialog2/0.0.1366.735@0.0.1366.735" timestamp="1583911885853" />
-    <state x="256" y="144" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1583946752837">
+    <state x="444" y="217" key="NewPhpClassDialog" timestamp="1584248064954">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="256" y="144" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1583946752837" />
+    <state x="444" y="217" key="NewPhpClassDialog/0.0.1304.768@0.0.1304.768" timestamp="1584248064954" />
+    <state x="256" y="144" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1584118665733">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="256" y="144" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1584118665733" />
     <state x="268" y="138" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1583911890939" />
     <state x="386" y="186" key="git4idea.merge.GitPullDialog" timestamp="1584113692588">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="386" y="186" key="git4idea.merge.GitPullDialog/0.0.1304.768@0.0.1304.768" timestamp="1584113692588" />
+    <state x="315" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584205001594">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="315" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1304.768@0.0.1304.768" timestamp="1584205001594" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
